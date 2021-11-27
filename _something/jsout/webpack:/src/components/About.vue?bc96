@@ -1,0 +1,4 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"ocg-feedback"},[_c('div',{staticClass:"ocg-item"},[_c('h2',{staticClass:"ocg-item-header"},[_vm._v(" Need Help? ")]),_c('div',{staticClass:"ocg-item-content"},[_c('p',[_vm._v("Send us a "),_c('a',{attrs:{"href":"mailto:hoa.nx.dev@gmail.com"}},[_vm._v("bug report")])])])]),_c('div',{staticClass:"ocg-item"},[_c('h2',{staticClass:"ocg-item-header"},[_vm._v(" Copyright ")]),_c('div',{staticClass:"ocg-item-content"},[_c('p',[_vm._v(" This extension is powered by "),_c('a',{attrs:{"href":"mailto:hoa.nx.dev@gmail.com"}},[_vm._v("Jambon")])])])])])}]
+
+export { render, staticRenderFns }

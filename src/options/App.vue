@@ -1,13 +1,15 @@
 <template>
-  <hello-world />
+  <div>
+    <p>Xin chao 01</p>
+    <p>Xin chao 02</p>
+  </div>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: { HelloWorld }
+  components: {}
 }
 </script>
 

@@ -1,0 +1,4 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('transition',{attrs:{"name":"ocg-notification-fade"}},[_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.visible),expression:"visible"}],staticClass:"ocg-notification"},[_c('div',{staticClass:"ocg-notification__group"},[_c('h2',{staticClass:"ocg-notification__title"},[_vm._v(" "+_vm._s(_vm.content.title)+" ")]),_c('div',{staticClass:"ocg-notification__content"},[_c('p',{staticClass:"ocg-truncate"},[_vm._v(" "+_vm._s(_vm.content.message)+" ")])])])])])}
+var staticRenderFns = []
+
+export { render, staticRenderFns }

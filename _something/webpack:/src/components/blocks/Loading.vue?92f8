@@ -1,0 +1,4 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('i',{staticClass:"ocg-icon-loading"},[_c('svg',{staticStyle:{"width":"20px","height":"20px"},attrs:{"viewBox":"0 0 24 24"}},[_c('path',{attrs:{"fill":"currentColor","d":"M12,4V2A10,10 0 0,0 2,12H4A8,8 0 0,1 12,4Z"}})])])}
+var staticRenderFns = []
+
+export { render, staticRenderFns }

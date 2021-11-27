@@ -1,0 +1,4 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"ocg-tabs is-vertical"},[_c('nav',{staticClass:"tabs is-boxed"},[_c('ul',_vm._l((_vm.tabs),function(tab){return _c('li',{key:tab.value,class:{ 'is-active': _vm.tabActive === tab.value }},[_c('a',{on:{"click":function($event){return _vm.childClick(tab.value)}}},[_c('span',{staticClass:"icon"},[_c('svg',{staticStyle:{"width":"24px","height":"24px"},attrs:{"viewBox":"0 0 24 24"}},[_c('path',{attrs:{"fill":"currentColor","d":tab.icon}})])]),_c('span',[_vm._v(" "+_vm._s(tab.label)+" ")])])])}),0)]),_c('section',{staticClass:"tab-content"},[_c(_vm.layout,{tag:"component",staticClass:"tab-item",attrs:{"state":_vm.state}})],1)])}
+var staticRenderFns = []
+
+export { render, staticRenderFns }

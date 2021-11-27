@@ -1,0 +1,4 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"ocg-wrapper"},[_c('notification'),_c('popup-header',{attrs:{"is-refresh":_vm.isRefresh,"is-offline":_vm.isOffline}}),(!_vm.isOffline)?_c('popup-content',{attrs:{"state":_vm.state}}):_vm._e()],1)}
+var staticRenderFns = []
+
+export { render, staticRenderFns }

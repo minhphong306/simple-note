@@ -1,0 +1,4 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"ocg-info"},[_vm._l((_vm.infos),function(info,index){return [(info.value)?_c('button',{key:index,staticClass:"ocg-info--button ocg-pointer",attrs:{"type":"button"},on:{"click":function($event){return _vm.onCopy(info.value)}}},[_c('div',{staticClass:"ocg-info--copy"},[_c('div',{staticClass:"ocg-truncate"},[_vm._v(" "+_vm._s(("Copy " + (info.text)))+" ")])]),_c('div',{staticClass:"ocg-info--copy-detail ocg-truncate"},[_vm._v(" "+_vm._s(info.value)+" ")])]):_vm._e()]})],2)}
+var staticRenderFns = []
+
+export { render, staticRenderFns }

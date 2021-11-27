@@ -1,0 +1,541 @@
+html {
+    background-color: #fff;
+    font-size: 14px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    min-width: 452px;
+    max-width: 452px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    box-sizing: border-box
+}
+
+body {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #4a4a4a;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5
+}
+
+button {
+    -webkit-appearance: button;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    text-transform: none;
+    overflow: visible
+}
+
+button:focus {
+    outline: 0
+}
+
+.daicaphong-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.daicaphong-pointer {
+    cursor: pointer
+}
+
+.daicaphong-icon-loading {
+    line-height: 0
+}
+
+.daicaphong-icon-loading svg {
+    -webkit-animation: rotating .6s linear infinite;
+    animation: rotating .6s linear infinite
+}
+
+.daicaphong-header {
+    background-image: linear-gradient(0deg, #041727 0, #131f37);
+    border: .125rem solid #fff;
+    overflow: hidden
+}
+
+.daicaphong-header--logo {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.daicaphong-header--logo h1 {
+    margin-left: .5rem;
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase
+}
+
+.daicaphong-header--store-info ul {
+    list-style: none;
+    padding: .5rem 1rem;
+    margin: 0
+}
+
+.daicaphong-header--store-info li {
+    display: flex;
+    margin-bottom: .25rem
+}
+
+.daicaphong-header--store-info li.is-offline {
+    opacity: .6
+}
+
+.daicaphong-header--label {
+    width: 40%;
+    font-size: .85rem;
+    color: #fff;
+    text-transform: uppercase
+}
+
+.daicaphong-header--value {
+    width: 60%;
+    font-size: .85rem;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right
+}
+
+.daicaphong-tabs.is-vertical {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+.daicaphong-tabs.is-vertical > .tab-content {
+    flex: 1
+}
+
+.daicaphong-tabs.is-vertical > .tabs ul {
+    flex-direction: column;
+    border-bottom-color: transparent
+}
+
+.daicaphong-tabs.is-vertical > .tabs ul li {
+    width: 100%
+}
+
+.daicaphong-tabs.is-vertical > .tabs ul li a {
+    justify-content: left
+}
+
+.daicaphong-tabs.is-vertical > .tabs.is-boxed li a {
+    border-bottom-color: transparent;
+    border-right-color: transparent
+}
+
+.daicaphong-tabs.is-vertical > .tabs.is-boxed li.is-active a {
+    border-left-color: #0093ed;
+    border-right-color: #0093ed;
+    border-bottom-color: #dbdbdb
+}
+
+.daicaphong-tabs .tabs {
+    -webkit-overflow-scrolling: touch;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    align-items: stretch;
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+    overflow: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 0;
+    flex-shrink: 0
+}
+
+.daicaphong-tabs .tabs ul {
+    list-style: none;
+    align-items: center;
+    border-bottom-color: #dbdbdb;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0
+}
+
+.daicaphong-tabs .tabs li {
+    margin: 0;
+    padding: 0;
+    display: block
+}
+
+.daicaphong-tabs .tabs li.is-active a {
+    border-left-color: #0093ed;
+    border-right-color: #0093ed;
+    color: #0093ed
+}
+
+.daicaphong-tabs .tabs a {
+    align-items: center;
+    border-bottom-color: #dbdbdb;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1px;
+    padding: .5em 1em;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none
+}
+
+.daicaphong-tabs .tabs .icon {
+    display: flex
+}
+
+.daicaphong-tabs .tabs .icon:first-child {
+    margin-right: .5em
+}
+
+.daicaphong-tabs .tabs.is-boxed li.is-active a {
+    background-color: #fff;
+    border-color: #dbdbdb;
+    border-bottom-color: transparent
+}
+
+.daicaphong-tabs .tabs.is-boxed a {
+    border: 1px solid transparent
+}
+
+.daicaphong-tabs .tab-content {
+    position: relative;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+    border-left: 1px solid #dbdbdb;
+    max-height: 300px;
+    overflow-y: auto;
+    scrollbar-width: 4px;
+    -webkit-overflow-scrolling: touch
+}
+
+.daicaphong-tabs .tab-content::-webkit-scrollbar {
+    width: 4px
+}
+
+.daicaphong-tabs .tab-content::-webkit-scrollbar-track {
+    background: transparent
+}
+
+.daicaphong-tabs .tab-content::-webkit-scrollbar-thumb {
+    background: #dadada;
+    border-radius: 4px
+}
+
+.daicaphong-tabs .tab-content .tab-item {
+    flex-shrink: 0;
+    flex-basis: auto
+}
+
+.daicaphong-info--button {
+    display: block;
+    border-style: none;
+    width: 100%;
+    color: #000;
+    background-color: #fff;
+    padding-top: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: .875rem;
+    text-align: left
+}
+
+.daicaphong-info--button:hover {
+    background-color: #f4f4f4
+}
+
+.daicaphong-info--copy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
+.daicaphong-info--copy-detail {
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+    opacity: .4;
+    font-size: .75rem
+}
+
+.daicaphong-tool__form {
+    margin-top: 16px
+}
+
+.daicaphong-tool__form .daicaphong-textarea {
+    margin-bottom: 8px
+}
+
+.daicaphong-feedback, .daicaphong-link, .daicaphong-tool {
+    padding-left: 1rem;
+    padding-right: 1rem
+}
+
+.daicaphong-item-header {
+    font-size: 16px;
+    margin: 0 0 4px
+}
+
+.daicaphong-item + .daicaphong-item {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #dbdbdb
+}
+
+.daicaphong-item-content > .daicaphong-button, .daicaphong-item-content > .daicaphong-input {
+    margin: 4px
+}
+
+.daicaphong-item-content p {
+    font-size: .875rem;
+    color: #000;
+    margin: 0 0 8px
+}
+
+.daicaphong-not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%
+}
+
+.daicaphong-notification {
+    position: fixed;
+    top: 4px;
+    right: 4px;
+    display: flex;
+    max-width: 155px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ebeef5;
+    background-color: #fff;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+    transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    overflow: hidden
+}
+
+.daicaphong-notification__group {
+    max-width: 100%
+}
+
+.daicaphong-notification__title {
+    font-weight: 700;
+    font-size: 14px;
+    color: #303133;
+    margin: 0
+}
+
+.daicaphong-notification__content p {
+    font-size: .875rem;
+    margin: 0
+}
+
+.daicaphong-notification-fade-enter, .daicaphong-notification-fade-leave-active {
+    transform: translateX(100%);
+    opacity: 0
+}
+
+.daicaphong-button {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    transition: .1s;
+    font-weight: 400;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    padding: 4px 8px;
+    font-size: 13px;
+    border-radius: 4px
+}
+
+.daicaphong-button svg {
+    margin-right: 4px
+}
+
+.daicaphong-button:hover {
+    color: #409eff;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff
+}
+
+.daicaphong-button.is-disabled, .daicaphong-button.is-disabled:focus, .daicaphong-button.is-disabled:hover {
+    color: #c0c4cc;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: #fff;
+    border-color: #ebeef5
+}
+
+.daicaphong-button + .daicaphong-button {
+    margin-left: 4px
+}
+
+.daicaphong-button--primary {
+    color: #fff;
+    background-color: #409eff;
+    border-color: #409eff
+}
+
+.daicaphong-button--primary:hover {
+    background: #66b1ff;
+    border-color: #66b1ff;
+    color: #fff
+}
+
+.daicaphong-button--danger.is-disabled:active, .daicaphong-button--danger.is-disabled:focus, .daicaphong-button--danger.is-disabled:hover, .daicaphong-button--primary.is-disabled, .daicaphong-button--primary.is-disabled:active, .daicaphong-button--primary.is-disabled:focus, .daicaphong-button--primary.is-disabled:hover {
+    color: #fff;
+    background-color: #a0cfff;
+    border-color: #a0cfff
+}
+
+.daicaphong-button--danger {
+    color: #fff;
+    background-color: #f56c6c;
+    border-color: #f56c6c
+}
+
+.daicaphong-button--danger:hover {
+    background: #f78989;
+    border-color: #f78989;
+    color: #fff
+}
+
+.daicaphong-button--danger.is-disabled {
+    color: #fff;
+    background-color: #fab6b6;
+    border-color: #fab6b6
+}
+
+.daicaphong-textarea {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: bottom;
+    font-size: 14px
+}
+
+.daicaphong-textarea__inner {
+    display: block;
+    resize: vertical;
+    padding: 5px 15px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: inherit;
+    color: #606266;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+    min-height: 80px
+}
+
+.daicaphong-textarea__inner:focus {
+    outline: none;
+    border-color: #409eff
+}
+
+.daicaphong-textarea__inner:hover {
+    border-color: #c0c4cc
+}
+
+.daicaphong-input {
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+    width: 100%
+}
+
+.daicaphong-input-group {
+    display: inline-flex;
+    align-items: center
+}
+
+.daicaphong-input-group .daicaphong-input__inner {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.daicaphong-input-group .daicaphong-button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.daicaphong-input__inner {
+    -webkit-appearance: none;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    color: #606266;
+    display: inline-block;
+    font-size: inherit;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    padding: 0 8px;
+    transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+    width: 100%
+}
+
+@-webkit-keyframes rotating {
+    0% {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+/*# sourceMappingURL=popup.d90439bfe67c40496351.5d6fc6c65e36dcf2b3f1.css.map */
